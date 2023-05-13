@@ -1,7 +1,7 @@
-compatibility_date = "2022-04-05"
+compatibility_date = "2023-05-13"
 compatibility_flags = ["streams_enable_constructors"]
 
 [[ d1_databases ]]
 binding = "DB" # i.e. available in your Worker on env.DB
-database_name = "race-stack"
-database_id = "b1e8fb04-966c-47cf-bc32-d2db4b0580f7"
+database_name = "core"
+database_id = "8cbb1787-fd7c-4107-b2b2-c74091ed79bb"
