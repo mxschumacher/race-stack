@@ -74,3 +74,13 @@ This project uses ESLint for linting. That is configured in `.eslintrc.js`.
 ### Formatting
 
 We use [Prettier](https://prettier.io/) for auto-formatting in this project. It's recommended to install an editor plugin (like the [VSCode Prettier plugin](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)) to get auto-formatting on save. There's also a `npm run format` script you can run to format all files in the project.
+
+### Greenkeeping
+
+Occassionally run the command below to upgrade your dependencies to the latest version. This will help you stay up to date with the latest security patches and bug fixes.
+
+> ncu -u
+
+In case you want to deploy without doing a commit via Github, you can call the following endpoint to trigger a deploy:
+
+> curl -X POST https://api.cloudflare.com/client/v4/pages/webhooks/deploy_hooks/f3f5de8c-71f8-432b-818d-2cc92b803cd4

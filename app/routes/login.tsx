@@ -47,9 +47,7 @@ export async function action({ request, context }: ActionArgs) {
     console.log(e);
   }
   if (user) {
-    const session = await authSessionStorage.getSession(
-      cookieHeader
-    );
+    const session = await authSessionStorage.getSession(cookieHeader);
 
     session.set("user", user);
     session.set("strategy", "form");

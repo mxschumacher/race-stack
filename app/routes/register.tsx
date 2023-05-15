@@ -1,10 +1,6 @@
 import { Github, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import {
-  ActionArgs,
-  LoaderArgs,
-  redirect,
-} from "@remix-run/cloudflare";
+import { ActionArgs, LoaderArgs, redirect } from "@remix-run/cloudflare";
 import { getDbFromContext, getUsers } from "@/lib/db.service.server";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";

@@ -28,11 +28,15 @@ import posthog from "posthog-js";
 export const links: LinksFunction = () => [{ rel: "stylesheet", href: styles }];
 
 export const meta: V2_MetaFunction = () => {
-  return [{
-    title: "Remix Race Stack",
-    "image": "https://user-images.githubusercontent.com/43375532/235511500-8bb82094-8599-4dc3-84d9-3c2d128c4678.png",
-    "og:image": "https://user-images.githubusercontent.com/43375532/235511500-8bb82094-8599-4dc3-84d9-3c2d128c4678.png"
-  }];
+  return [
+    {
+      title: "Remix Race Stack",
+      image:
+        "https://user-images.githubusercontent.com/43375532/235511500-8bb82094-8599-4dc3-84d9-3c2d128c4678.png",
+      "og:image":
+        "https://user-images.githubusercontent.com/43375532/235511500-8bb82094-8599-4dc3-84d9-3c2d128c4678.png",
+    },
+  ];
 };
 
 export async function loader({ request, context }: LoaderArgs) {

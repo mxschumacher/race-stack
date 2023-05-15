@@ -98,7 +98,7 @@ export default function TeamSwitcher({
           className={cn("w-[200px] justify-between", className)}
         >
           {typeof selectedTeam.avatar === "string" &&
-            selectedTeam.avatar.startsWith("linear-gradient") ? (
+          selectedTeam.avatar.startsWith("linear-gradient") ? (
             <div
               className="mr-2 h-5 w-5 rounded-full aspect-square text-white"
               style={{
@@ -138,7 +138,7 @@ export default function TeamSwitcher({
                     className="text-sm"
                   >
                     {typeof team.avatar === "string" &&
-                      team.avatar.startsWith("linear-gradient") ? (
+                    team.avatar.startsWith("linear-gradient") ? (
                       <div
                         className="mr-2 h-5 w-5 rounded-full text-center aspect-square text-white"
                         style={{

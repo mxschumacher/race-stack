@@ -69,9 +69,7 @@
       "indexes": {
         "emailIdx": {
           "name": "emailIdx",
-          "columns": [
-            "email"
-          ],
+          "columns": ["email"],
           "isUnique": true
         }
       },
@@ -102,23 +100,15 @@
           "name": "usersToTeams_userId_users_id_fk",
           "tableFrom": "usersToTeams",
           "tableTo": "users",
-          "columnsFrom": [
-            "userId"
-          ],
-          "columnsTo": [
-            "id"
-          ]
+          "columnsFrom": ["userId"],
+          "columnsTo": ["id"]
         },
         "usersToTeams_teamId_teams_id_fk": {
           "name": "usersToTeams_teamId_teams_id_fk",
           "tableFrom": "usersToTeams",
           "tableTo": "teams",
-          "columnsFrom": [
-            "teamId"
-          ],
-          "columnsTo": [
-            "id"
-          ]
+          "columnsFrom": ["teamId"],
+          "columnsTo": ["id"]
         }
       },
       "compositePrimaryKeys": {}

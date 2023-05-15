@@ -6,6 +6,7 @@ module.exports = {
     "@remix-run/eslint-config/jest-testing-library",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
+    "prettier",
     "plugin:prettier/recommended",
   ],
   rules: {
